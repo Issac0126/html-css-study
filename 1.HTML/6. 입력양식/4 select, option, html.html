@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select, option, html</title>
+</head>
+<body>
+    <form action="#">
+        <select name="drink" id="">
+           
+            <optgroup label="Coffee">
+                <option value="ame">Americano</option>
+                <option value="esp">Espresso</option>
+                <option value="cal">Caffe Latte</option>
+                <option value="capp">Cappuccino</option>
+            </optgroup>
+
+            <optgroup label="Non-Coffee">
+                <option value="oran" selected>Orange Juice</option>
+                <option value="app">Apple Juice</option>
+                <option value="grap">Grape Juice</option>
+            </optgroup>
+        </select>
+
+        <br><br><br>
+        <hr>
+
+        <input type="text" list="fruits">
+
+        <datalist id="fruits">
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Orange</option>
+            <option>Grape</option>
+            <option>Mango</option>
+        </datalist> <!-- 자동완성기능 같다 -->
+
+
+    </form>
+</body>
+</html>
