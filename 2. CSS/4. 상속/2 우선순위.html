@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우선순위</title>
+
+    <style>
+
+        div { /* 태그 선택자 = 1점 */
+            color: brown !important;
+        }
+
+        .c-green{ /* 클래스 선택자 = 10점 */
+            color: green;
+        }
+
+        #i-yellow{ /* 아이디 선택자 = 100점 */
+            color: rgb(179, 167, 0);
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="i-yellow" class="c-green" style="color: orange;">hello</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
