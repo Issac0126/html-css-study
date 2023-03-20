@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습2</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        section{
+            border: 4px double black;
+            width: 650px;
+            margin: 20px auto;
+        }
+        h1{
+            text-align: center;
+            padding: 20px 20px;
+            font-size: 30px;
+            font-family: '궁서체', 'archery', serif;
+            font-weight: bold;
+            background: rgb(196, 196, 196);
+        }
+        .intro{
+            background: #444444;
+            color: white;
+            font-size: 15px;
+            padding: 8px 0;
+            text-align: center;
+        }
+        em{
+            color: yellow;
+            font-size: 16px;
+        }
+
+        .gallery{
+            background-color: #6d6d6d;
+        }
+
+        li{
+            float: left;
+            width: 23.75%;
+            margin: 17px 1% 17px 0;
+            height: 250px;
+        }
+
+        
+        #tulip{
+            margin-left: 1%;
+            background-color: rgb(245, 94, 94);     }
+        #jebi{
+            background-color: rgb(210, 124, 221);   }
+        #hobak{
+            background-color: rgb(252, 128, 56);    }
+        #sunflower{
+            background-color: rgb(255, 222, 37);    }
+
+        .gallery > li > h2{
+            width: 93%;
+            margin: 5px auto;
+            height: 110px;
+            background-size: cover;
+        }
+
+        #tulip h2{
+            background-image: url(./images/tulip.jpg);   }
+        #jebi h2{
+            background-image: url(./images/jebi.jpg);    }
+        #hobak h2{
+            background-image: url(./images/hobak.jpg);   
+            background-position: 40%;
+        }
+            
+        #sunflower h2{
+            background-image: url(./images/sunflower.jpg);    }
+        
+        li>p{
+            font-size: 14px;
+            padding: 10px 12px;
+            line-height: 1.2em;
+            font-weight: 600;
+        }
+
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>나의 아름다운 정원</h1>
+        <p class="intro">
+            사람들은 아마 자신에게 <em>자신감을 북돋워 주는</em> 표정있는 꽃들을 선호할 것이다.
+        </p>
+
+        <ul class="gallery clearfix">
+            <li id="tulip">
+                <h2></h2> <!-- 각 h2에 background 속성+url로 꽃 이미지 넣기 -->
+                <p>너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+                    붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.</p> <!-- 꽃에 대한 설명 -->
+            </li>
+            <li id="jebi">
+                <h2></h2>
+                <p>드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+                    어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.</p>
+            </li>
+            <li id="hobak">
+                <h2></h2>
+                <p>색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+                    매우 완숙한 이미지를 풍기는 꽃이다.</p>
+            </li>
+            <li id="sunflower">
+                <h2></h2>
+                <p>태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+                    속하며 송이가 적어야 제격이다.</p>
+            </li>
+        </ul>
+
+
+
+    </section>
+
+
+</body>
+</html>

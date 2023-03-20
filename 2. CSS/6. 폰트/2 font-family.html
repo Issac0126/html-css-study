@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font family</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet"> -->
+
+
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+        @font-face {
+            font-family: 'NeoDunggeunmoPro-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'KyoboHandwriting2021sjy';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'CookieRun Bold';
+            src: url(./fonts/CookieRun\ Bold.ttf);
+        }
+
+        div {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .font1 {
+            /* 바탕체: serif */
+            font-family: serif;
+        }
+
+        .font2 {
+            /* 고딕체: sans-serif */
+            font-family: sans-serif;
+        }
+
+        .font3 {
+            /* 모노스페이스(가로폭이 동등함) */
+            font-family: monospace;
+        }
+
+        .font4 {
+            /* 필기체 */
+            font-family: cursive;
+        }
+
+        .font5 {
+            font-family: fantasy;
+        }
+
+        .font6 {
+            font-family: 'KyoboHandwriting2021sjy';
+        }
+
+        .font7 {
+            font-family: 'NeoDunggeunmoPro-Regular';
+        }
+        h1{
+            /* font-family: 'CookieRun Bold', sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: oblique;
+            line-height: 1.4em; */
+
+            /* font: 스타일 두께 크기 / 줄높이 글꼴 */
+            /* 단축 속성 사용 시 font-size와 font-family는 필수 */
+            font: oblique bold 30px / 1.4 'CookieRun Bold', sans-serif;
+        }
+    </style>
+
+    <!--   ¯\_(ツ)_/¯   -->
+
+
+</head>
+
+<body>
+    <div class="font1">Hello World!</div>
+    <div class="font2">Hello World!</div>
+    <div class="font3">Hello World!</div>
+    <div class="font4">Hello World!</div>
+    <div class="font5">Hello World!</div>
+    <div class="font6">Hello World!</div>
+    <div class="font7">Hello World!</div>
+    <h1>용감한 쿠키가 달립니다</h1>
+</body>
+
+
+</html>

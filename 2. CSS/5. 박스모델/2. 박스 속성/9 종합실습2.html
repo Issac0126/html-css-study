@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>종합실습 예제2</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        nav{
+            background-color: rgb(189, 189, 189);
+            width: fit-content; height: fit-content;
+            margin: 20px auto 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            
+        }
+        li{
+            font-size: 18px;
+            padding: 8px;
+            margin: 10px;
+            font-weight: bold;
+            width: fit-content;
+            /* x축 y축 블러크기 색상 */
+            text-shadow: 2px 2px 4px rgb(58, 58, 58);
+        }
+        
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        li:hover{
+            background-color:  skyblue;
+            color: yellow;
+            transition: 0.2s;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>   <!-- 이 경우 li에 hover을 줬으니 글자 외에 마우스를 대도 클릭이 뜸... li 안에 a들어가게 수정.  -->
+            <a href="#"><li>[주문] 긴급재난지원금을 쿠X 에서 사용할 수 있나요?</li></a>
+            <a href="#"><li>다슬기를 키우고 싶은데 어떤 환경이 필요한가요?</li></a>
+            <a href="#"><li>달팽이가 집을 나갔습니다. 어떻게 하죠?</li></a>
+        </ul>
+    </nav>
+
+</body>
+</html>
