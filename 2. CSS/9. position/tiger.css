@@ -1,0 +1,92 @@
+
+@import url(../../common.css);
+
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #666666;
+}
+
+#wrapper{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#wrapper h1{ /* head 호랑이를 주제로 한 민화 */
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(167, 167, 33);
+    /* font-family: '휴먼모음T', sans-serif; */
+    font-family: 'Dovemayo_gothic';
+    letter-spacing: 2px;
+    text-align: center;
+}
+h1>strong{/* 호랑이 */
+    font-size: 75px;
+    color: white;
+}
+h1>span{ /* 주제 */
+    font-size: 45px;
+}
+h1>em{ /* 민화 */
+    font-size: 55px;
+    color: lightgrey;
+}   
+header{
+    background-color: rgb(52, 63, 94);
+    padding: 20px 0px;
+}   /* head 호랑이를 주제로 한 민화 끝!! */ 
+
+
+.menu{  /* menu */
+    background-color: lightgrey;
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    padding: 30px;
+}
+.menu li a:hover{
+    color: #662;
+    border-bottom: 1px dashed #662;
+}
+.menu>li{
+    margin-bottom: 13px;
+}
+.menu >li> a{
+    text-decoration: underline;
+    font-size: 15px;
+} /* menu */
+
+
+.container{
+    margin-left: 200px;
+    background-color: white;
+    height: 500px;
+}
+.container>.content>p{
+    font-size: 14px;
+    padding: 15px;
+    line-height: 1.4;
+    text-align: justify;
+}
+.container>.content>h2{
+    background-color: rgb(128, 28, 28);
+    padding: 10px 0px 10px 20px;
+    color: gold;
+    font-family: '궁서체', serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+footer{ /* footer */
+    background-color: #adadad;
+    padding: 15px 0px 15px 20px ;
+    font-size: 14px;
+}

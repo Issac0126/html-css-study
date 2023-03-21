@@ -1,0 +1,124 @@
+
+@import url(../../common.css);
+
+body{
+    background-color: #666666;
+}
+
+#wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.container{
+    height: 1000px;
+}
+
+header{ /* head 바 */
+    background: orange;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+}
+h1>span{
+    font-size: 25px;
+}
+
+h2{
+    background-color: #c9c9c9;
+    padding: 5px 0;
+    font-size: 16px;
+} /* head 바 */
+
+
+.side-menu{ /* 사이드 메뉴 시작 */
+    width: 20%;
+    min-height: 1000px;
+    background: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+.side-menu>h3{
+    padding: 7px 0 7px 15px;
+    background: rgb(150, 8, 8);
+    color: white;
+}
+.side-menu>ul>li{
+    color: black;
+    padding: 10px 15px;
+
+}
+.side-menu>ul>li>a{
+    text-decoration: underline;
+} /* 사이드 메뉴 끝 */
+
+
+/* 메인 콘텐츠 */
+.main-content{
+    width: 60%;
+    min-height: 1000px;
+    margin: 0 20%;
+    background: #ccc;
+}
+.main-content>.art-piece{
+    padding: 5px;
+}
+.main-content>.art-piece >.title{
+    background: rgb(19, 24, 68);
+    padding: 6px;
+    color: white;
+    /* width: 90%; */
+    margin: 10px;
+}
+.main-content>.art-piece>.artist{ /* 아티스트 */
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.main-content>.art-piece>.detail{
+    font-size: 14px;
+    margin: 10px;
+} /* 메인 콘텐츠 끝*/
+
+
+/* 배너 */
+.container>.banner{
+    width: 20%;
+    min-height: 1000px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+}
+.banner>h3{
+    font-size: 26px;
+}
+.banner>h3>span{
+    text-decoration: underline;
+}
+.banner>h3>.all{
+    color: gray;
+}
+.banner>h3>.love{
+    color: orange;
+}
+
+.banner>h3>strong{
+    color: black;
+}
+
+
+
+
+
+
