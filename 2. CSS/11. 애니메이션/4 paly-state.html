@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paly-state</title>
+    <style>
+          .box{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border-radius: 10px;
+            margin: 30px;
+            /* animation: size-up 2s linear infinite alternate; */
+            animation: opacity-easeOutBounce 5s;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        @keyframes size-up {
+            0%{
+                width: 100px;
+            }
+            100%{
+                width: 100%;
+            }
+        }
+
+        @keyframes opacity-easeOutBounce {
+	0% {
+		opacity: 1;
+	}
+
+	12% {
+		opacity: 0.89;
+	}
+
+	24% {
+		opacity: 0.56;
+	}
+
+	36% {
+		opacity: 0.02;
+	}
+
+	54% {
+		opacity: 0.25;
+	}
+
+	74% {
+		opacity: 0.02;
+	}
+
+	82% {
+		opacity: 0.06;
+	}
+
+	92% {
+		opacity: 0.01;
+	}
+
+	96% {
+		opacity: 0.02;
+	}
+
+	100% {
+		opacity: 0;
+	}
+
+}
+
+        .box::before{
+            content: '재생중';
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff
+        }
+
+        .box:hover{
+            animation-play-state: paused;
+            background-color: skyblue;
+        }
+
+        .box:hover::before{
+            content: '중지됨!';
+            color: black;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -6,83 +6,94 @@ body{
 }
 
 #wrapper{
-    width: 1200px;
+    width: 1400px;
     margin: 0 auto;
     background-color: aliceblue;
-    position: relative;
 }
 
-.container{
-    height: 1000px;
+.container {
+    position: relative;
+    height: 850px;
 }
+
 
 header{ /* head 바 */
-    background: orange;
     text-align: center;
 }
 
 h1{
+    background: orange;
+    line-height: 0.4;
     color: white;
-    font-size: 55px;
+    font-size: 5em;
     font-weight: bold;
+    padding: 30px 0;
 }
 h1>span{
+    padding-top: 60px;
+    display: block;
     font-size: 25px;
 }
 
 h2{
-    background-color: #c9c9c9;
-    padding: 5px 0;
+    background-color: #b6b6b6;
+    padding: 7px 0;
     font-size: 16px;
 } /* head 바 */
 
 
 .side-menu{ /* 사이드 메뉴 시작 */
-    width: 20%;
-    min-height: 1000px;
+    width: 25%;
+    height: 100%;
     background: white;
     font-size: 18px;
     font-weight: bold;
-    position: absolute;
-    left: 0;
+    /* position: absolute;
+    left: 0; */
+    float: left;
 }
 .side-menu>h3{
-    padding: 7px 0 7px 15px;
+    padding: 15px 0 15px 18px;
     background: rgb(150, 8, 8);
     color: white;
 }
+
 .side-menu>ul>li{
     color: black;
-    padding: 10px 15px;
-
-}
-.side-menu>ul>li>a{
+    padding: 15px;
     text-decoration: underline;
+}
+.side-menu>ul>li:hover{
+    border-bottom: 2px dashed  #666666;
 } /* 사이드 메뉴 끝 */
 
 
 /* 메인 콘텐츠 */
 .main-content{
-    width: 60%;
-    min-height: 1000px;
-    margin: 0 20%;
-    background: #ccc;
+    width: 50%;
+    height: 100%;
+    margin: 0 25%;
+    background: #dddddd;
 }
 .main-content>.art-piece{
-    padding: 5px;
+    padding-top: 10px;
+    font-size: 20px;
 }
+
 .main-content>.art-piece >.title{
     background: rgb(19, 24, 68);
-    padding: 6px;
+    padding: 6px 17px;
     color: white;
-    /* width: 90%; */
-    margin: 10px;
+    margin: 5px;
 }
+.main-content>.art-piece >.title>a:hover{
+    text-decoration: underline;
+}
+
 .main-content>.art-piece>.artist{ /* 아티스트 */
-    font-size: 20px;
     font-weight: bold;
-    margin-left: 10px;
     padding-top: 10px;
+    margin-left: 10px;
 }
 .main-content>.art-piece>.detail{
     font-size: 14px;
@@ -91,20 +102,28 @@ h2{
 
 
 /* 배너 */
-.container>.banner{
-    width: 20%;
-    min-height: 1000px;
+.banner{
+    width: 25%;
+    height: 100%;
     background-color: white;
     font-size: 18px;
     font-weight: bold;
     position: absolute;
     right: 0;
+    top: 0;
+    padding: 15px;
 }
-.banner>h3{
-    font-size: 26px;
+.banner>h3{ /* 전세계~서양미술사의 시대 */
+    font-size: 23px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    
 }
-.banner>h3>span{
+.banner h3 span {
     text-decoration: underline;
+}
+.banner span{
+    display: block;
 }
 .banner>h3>.all{
     color: gray;
@@ -112,10 +131,36 @@ h2{
 .banner>h3>.love{
     color: orange;
 }
-
 .banner>h3>strong{
+    display: block;
     color: black;
+} /* 전세계~서양미술사의 시대 끝*/
+
+.banner>.link>li{
+    line-height: 1.2;
+    margin: 20px 0;
+    font-weight: normal;
 }
+
+.banner>.link>li>a{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+footer{
+    background: rgb(19, 24, 68);
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 15px;
+}
+footer a{
+    text-decoration: underline;
+}
+
 
 
 

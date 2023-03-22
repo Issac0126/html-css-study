@@ -1,4 +1,5 @@
 
+/*  reset css  */
 @import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css');
 
 @font-face {
@@ -7,6 +8,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
 
 /* 
 공용 css 파일에 공통적으로 지정할 스타일을 모아놓고
